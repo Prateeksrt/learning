@@ -6,7 +6,7 @@ package com.refresh;
 public class SupplierFactory {
 
     private Supplier getSuperSupplier(){
-        return new Supplier("Super", new SupplierPriceCalculator());
+        return new Supplier("Super", SupplierPriceCalculator.getInstance());
     }
 
     public Supplier getInstance(String supplierName){
