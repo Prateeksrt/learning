@@ -1,8 +1,5 @@
 package com.room;
 
-/**
- * Created by prateeks on 10/6/15.
- */
 public class Bulb {
 
     private boolean glowing;

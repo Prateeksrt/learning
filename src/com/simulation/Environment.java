@@ -1,8 +1,5 @@
 package com.simulation;
 
-/**
- * Created by prateeks on 10/6/15.
- */
 public class Environment {
 
     private Person person;

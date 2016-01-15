@@ -1,8 +1,5 @@
 package com.football;
 
-/**
- * Created by prateeks on 10/4/15.
- */
 public class Fan implements GameObserver {
 
     private Team favourite;
@@ -13,8 +10,8 @@ public class Fan implements GameObserver {
 
     @Override
     public void goalOccured(GoalEvent goalEvent) {
-        System.out.print("Fan of Team "+favourite.getName()+" says ");
-        if(goalEvent.getTeam().equals(favourite))
+        System.out.print("Fan of Team " + favourite.getName() + " says ");
+        if (goalEvent.getTeam().equals(favourite))
             System.out.println("Huraah");
         else
             System.out.println("Aaaahh");

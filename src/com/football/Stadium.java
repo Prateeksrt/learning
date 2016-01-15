@@ -1,8 +1,5 @@
 package com.football;
 
-/**
- * Created by prateeks on 10/4/15.
- */
 public class Stadium {
 
     public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class Stadium {
 
     private static void playGame(Game game) {
         double random = Math.random();
-        Team goaled = (random<=.5)?game.getTeam1():game.getTeam2();
+        Team goaled = (random <= .5) ? game.getTeam1() : game.getTeam2();
         game.goal(goaled);
     }
 }

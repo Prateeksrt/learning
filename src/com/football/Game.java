@@ -23,13 +23,13 @@ public class Game {
         this.observers = new ArrayList<>();
     }
 
-    public void addGameObserver(GameObserver gameObserver){
+    public void addGameObserver(GameObserver gameObserver) {
         this.observers.add(gameObserver);
     }
 
-    public void goal(Team team){
+    public void goal(Team team) {
         GoalEvent newGoalEvent = new GoalEvent(team);
-        for(GameObserver gameObserver : observers){
+        for (GameObserver gameObserver : observers) {
             gameObserver.goalOccured(newGoalEvent);
         }
     }
