@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MoneyTest {
 
@@ -86,5 +87,10 @@ public class MoneyTest {
         Rupee ten = new Rupee(10);
         Rupee result = ten.add(five);
         assertEquals(15.0,result.getValue(),0);
+    }
+
+    @Test
+    public void test_equality_of_five_dollar_with_five_dollar(){
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
     }
 }
